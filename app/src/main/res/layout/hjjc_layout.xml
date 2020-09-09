@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XXX" />
+
+        <TextView
+            android:id="@+id/tv_up_msg"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XXX" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_city_name"
+                style="@style/MyTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:padding="5dp"
+                android:text="XXX" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:padding="5dp"
+                    android:text="生活指数" />
+
+                <TextView
+                    style="@style/MyTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:text="最高" />
+
+                <TextView
+                    style="@style/MyTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:text="最低" />
+
+                <TextView
+                    style="@style/MyTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:text="平均值" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pic_chart"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"></com.github.mikephil.charting.charts.PieChart>
+
+    </RelativeLayout>
+</LinearLayout>

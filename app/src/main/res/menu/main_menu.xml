@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rzcx"
+        android:title="日志查询" />
+
+    <item
+        android:id="@+id/yhgl"
+        android:title="用户管理" />
+
+    <item
+        android:id="@+id/gjcx"
+        android:title="公交查询" />
+    <item
+        android:id="@+id/ssgj"
+        android:title="实时交通" />
+
+    <item
+        android:id="@+id/hjjc"
+        android:title="环境监测" />
+</menu>
